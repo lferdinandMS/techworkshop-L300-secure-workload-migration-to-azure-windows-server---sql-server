@@ -23,6 +23,10 @@ After you complete this exercise, you will be able to:
 - Retrieve your Entra ID account information using the Azure CLI
 - Deploy Azure resources using an ARM Template
 
+## Prerequisites
+
+- Owner or Contributor rights on the target Azure subscription, including permissions to register resource providers
+
 ## Lab Duration
 
 - **Estimated Time:** 30 minutes
