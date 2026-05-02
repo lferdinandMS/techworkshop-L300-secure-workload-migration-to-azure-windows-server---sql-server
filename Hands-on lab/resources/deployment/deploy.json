@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.35.1.17967",
-      "templateHash": "17838013085962666701"
+      "templateHash": "17292414531461226503"
     }
   },
   "parameters": {
@@ -132,7 +132,7 @@
     "onPremPrefix": "[format('{0}-onprem', variables('resourceNameBase'))]",
     "onPremSqlVmPrefix": "[format('{0}-sql', variables('onPremPrefix'))]",
     "onPremWindowsVmPrefix": "[format('{0}-win', variables('onPremPrefix'))]",
-    "openAIName": "[format('{0}-oai', variables('resourceNameBase'))]",
+    "openAIName": "[format('{0}-oai-{1}', variables('resourceNameBase'), take(uniqueString(parameters('azureAdUserId')), 4))]",
     "gitHubRepo": "[format('{0}/{1}', parameters('repositoryOwner'), parameters('repositoryName'))]",
     "gitHubRepoScriptPath": "Hands-on%20lab/resources/deployment/onprem",
     "gitHubRepoUrl": "[format('https://github.com/{0}/raw/refs/heads/{1}/{2}', variables('gitHubRepo'), parameters('repositoryBranch'), variables('gitHubRepoScriptPath'))]",

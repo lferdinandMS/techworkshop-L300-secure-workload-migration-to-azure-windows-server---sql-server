@@ -72,7 +72,7 @@ var onPremPrefix = '${resourceNameBase}-onprem'
 var onPremSqlVmPrefix = '${onPremPrefix}-sql'
 var onPremWindowsVmPrefix = '${onPremPrefix}-win'
 
-var openAIName = '${resourceNameBase}-oai'
+var openAIName = '${resourceNameBase}-oai-${take(uniqueString(azureAdUserId), 4)}'
 
 var gitHubRepo = '${repositoryOwner}/${repositoryName}'
 var gitHubRepoScriptPath = 'Hands-on%20lab/resources/deployment/onprem'
